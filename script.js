@@ -11,8 +11,8 @@ const createBoard = (n = 5) => {
     if(n < 5) {n = 5}
     else if(n > 50){n = 50}
     pixelBoard.innerHTML = '';
-    pixelBoard.style.gridTemplateColumns = `repeat(${n}, 1fr)`;
-    pixelBoard.style.gridTemplateRows = `repeat(${n}, 1fr)`;
+    pixelBoard.style.gridTemplateColumns = `repeat(${n}, 0fr)`;
+    pixelBoard.style.gridTemplateRows = `repeat(${n}, 0fr)`;
     for (let i = 0; i < n * n; i += 1) {
       const board = document.createElement('section');
       board.className = 'pixel';

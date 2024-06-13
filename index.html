@@ -4,25 +4,25 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <h1 id="title">Paleta de Cores</h1>
+    <title>Paleta de Cores</title>
 </head>
 
 <body>
-    <div id="color-palette">
-        <section class="color selected"  id="color1">dwdw</section>
-        <section class="color"  id="color2">wdwd</section>
-        <section class="color"  id="color3">wefef</section>
-        <section class="color"  id="color4">dwdwd</section>       
+    <div class="container">
+        <h1 id="title">Paleta de Cores</h1>
+        <div id="color-palette">
+            <section class="color selected" id="color1"></section>
+            <section class="color" id="color2"></section>
+            <section class="color" id="color3"></section>
+            <section class="color" id="color4"></section>
+        </div>
+        <div class="controls">
+            <input placeholder="digite um número" id="board-size" type="number" min="1" placeholder="Tamanho do quadro">
+            <button id="generate-board">Mudar tamanho</button>
+            <button id="clear-board">Limpar</button>
+        </div>
+        <div id="pixel-board"></div>
     </div>
-    <div>
-        <button id="clear-board">Limpar</button>
-    </div>
-    <div>
-        <input id="board-size" type="number" min='1'>
-        <button id="generate-board">VQV</button>
-    </div>
-    <div id="pixel-board"></div>
 
     <script src="script.js"></script>    
 </body>

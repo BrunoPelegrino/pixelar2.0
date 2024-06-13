@@ -7,13 +7,23 @@
     <title>Document</title>
     <h1 id="title">Paleta de Cores</h1>
 </head>
+
 <body>
     <div id="color-palette">
-        <section class="color"  id="red">wdwd</section>
-        <section class="color"  id="black">dwdw</section>
-        <section class="color"  id="yellow">wefef</section>
-        <section class="color"  id="blue">dwdwd</section>       
+        <section class="color selected"  id="color1">dwdw</section>
+        <section class="color"  id="color2">wdwd</section>
+        <section class="color"  id="color3">wefef</section>
+        <section class="color"  id="color4">dwdwd</section>       
     </div>
+    <div>
+        <button id="clear-board">Limpar</button>
+    </div>
+    <div>
+        <input id="board-size" type="number" min='1'>
+        <button id="generate-board">VQV</button>
+    </div>
+    <div id="pixel-board"></div>
+
     <script src="script.js"></script>    
 </body>
 </html>

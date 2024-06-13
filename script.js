@@ -5,6 +5,7 @@ const pixel = document.getElementsByClassName('pixel')
 const button = document.getElementById('clear-board')
 const boardButton = document.getElementById('generate-board')
 const input = document.getElementById('board-size')
+const resetBtn = document.getElementById('reset-board-size')
 
 
 const createBoard = (n = 5) => {
@@ -27,9 +28,8 @@ const createBoard = (n = 5) => {
     const string = '0123456789ABCDEF';
     let hash = '#';
     for (let i = 0; i < 6; i += 1) {
-        console.log(hash += string[Math.floor(Math.random() * 16)]);
+      hash += string[Math.floor(Math.random() * 16)];
     }
-    console.log(hash);
     return hash;
 };
 
@@ -74,6 +74,12 @@ const clearButton = () => {
   }
 }
 
+const resetButton = () => {
+    createBoard();
+    input.value = ''
+    input.focus()
+  }
+
 const handleClick = () => {
   for(let i = 0; i < classColor.length; i += 1){
     classColor[i].addEventListener('click', addClassSelected)
@@ -86,6 +92,8 @@ const handleClick = () => {
   boardButton.addEventListener('click', boardBtn)
 
   button.addEventListener('click', clearButton)
+
+  resetBtn.addEventListener('click', resetButton)
 
 }
 
@@ -103,6 +111,9 @@ const boardBtn = () => {
     alert('Número deve ser maior que zero')
   }
   else createBoard(input.value)
+
+  input.value = ''
+  input.focus()
   
 }
 setColorPalette()

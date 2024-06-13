@@ -1,17 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
+    background-image: url('Captura\ de\ tela\ de\ 2024-06-13\ 19-28-24.png'), url('Captura\ de\ tela\ de\ 2024-06-13\ 19-30-36.png');
+    background-repeat: no-repeat;
+    background-position: left, right;
 }
 
 .container {
     text-align: center;
-    background-color: #fff;
+
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
